@@ -1,22 +1,54 @@
+import Link from "next/link";
+import Image from "next/image";
+import { BsGithub } from "react-icons/bs";
+
+// internal imports
+import projects from "../constants/projects";
+
 export default function Projects() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam
-      nemo voluptatum velit dolor numquam voluptas sunt, excepturi corrupti
-      doloremque neque, sed illo fuga ut quas. Temporibus corporis ducimus fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam
-      nemo voluptatum velit dolor numquam voluptas sunt, excepturi corrupti
-      doloremque neque, sed illo fuga ut quas. Temporibus corporis ducimus
-      fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-      laboriosam nemo voluptatum velit dolor numquam voluptas sunt, excepturi
-      corrupti doloremque neque, sed illo fuga ut quas. Temporibus corporis
-      ducimus fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Cumque laboriosam nemo voluptatum velit dolor numquam voluptas sunt,
-      excepturi corrupti doloremque neque, sed illo fuga ut quas. Temporibus
-      corporis ducimus fuga?Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Cumque laboriosam nemo voluptatum velit dolor numquam voluptas sunt,
-      excepturi corrupti doloremque neque, sed illo fuga ut quas. Temporibus
-      corporis ducimus fuga?
-    </div>
+    <section
+      id="projects"
+      className="px-[12rem] py-[6rem] bg-gradient-to-l from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-tr-[10%] flex flex-col justify-center item-center"
+    >
+      <div className="grid grid-cols-3 gap-[2rem]">
+        {projects.map((project, idx) => {
+          return (
+            <div
+              key={idx}
+              className="flex flex-col p-4 md:p-0 rounded-md shadow-md bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/30 "
+            >
+              <div className="p-[0.5rem] rounded-md">
+                <Link href={project.github}>
+                  <Image
+                    src={project.image}
+                    alt=""
+                    width={1000}
+                    height={1000}
+                    className="rounded-sm hover:opacity-90 p-[0.5rem] border-[1px] border-solid border-slate-50/60"
+                  />
+                </Link>
+              </div>
+              <div className="p-[2rem] pt-[1rem] flex flex-col justify-center items-start gap-[0.6rem]">
+                <h1 className="text-[1.6rem] font-bold text-slate-700">
+                  {project.name}
+                </h1>
+                <p className="text-md leading-7 text-teal-900 font-medium">
+                  {project.description}
+                </p>
+                <div className="flex flex-row align-bottom space-x-4 text-teal-900">
+                  <Link href={project.github} target="_blank">
+                    <BsGithub
+                      size={30}
+                      className="hover:-translate-y-1 transition-transform cursor-pointer"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }

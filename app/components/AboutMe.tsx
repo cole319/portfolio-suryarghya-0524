@@ -3,7 +3,7 @@ import { FaGraduationCap } from "react-icons/fa";
 export default function AboutMe() {
   return (
     <section
-      id="#about_me"
+      id="about_me"
       className="px-[12rem] py-[10rem] bg-gradient-to-l from-teal-800 via-teal-800/20 to-transparent text-slate-50 rounded-tr-[10%] flex justify-between item-center"
     >
       <div

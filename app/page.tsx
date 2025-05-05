@@ -42,7 +42,7 @@ export default function Home() {
         heading="Projects"
         desc="Browse my latest"
       />
-      <div className="bg-[url('/projects_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
+      <div className="bg-[url('/projects_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%]">
         <Projects />
       </div>
       <ContactMe />
