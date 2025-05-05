@@ -1,22 +1,15 @@
 export default function Skills() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam
-      nemo voluptatum velit dolor numquam voluptas sunt, excepturi corrupti
-      doloremque neque, sed illo fuga ut quas. Temporibus corporis ducimus fuga?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam
-      nemo voluptatum velit dolor numquam voluptas sunt, excepturi corrupti
-      doloremque neque, sed illo fuga ut quas. Temporibus corporis ducimus
-      fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-      laboriosam nemo voluptatum velit dolor numquam voluptas sunt, excepturi
-      corrupti doloremque neque, sed illo fuga ut quas. Temporibus corporis
-      ducimus fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Cumque laboriosam nemo voluptatum velit dolor numquam voluptas sunt,
-      excepturi corrupti doloremque neque, sed illo fuga ut quas. Temporibus
-      corporis ducimus fuga?Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Cumque laboriosam nemo voluptatum velit dolor numquam voluptas sunt,
-      excepturi corrupti doloremque neque, sed illo fuga ut quas. Temporibus
-      corporis ducimus fuga?
-    </div>
+    <section
+      id="skills"
+      className="px-[12rem] py-[10rem] bg-gradient-to-r from-teal-800 via-teal-800/20 to-transparent text-slate-50 rounded-bl-[10%] flex justify-between item-center"
+    >
+      <article id="skills_container" className="grid grid-cols-2 grid-rows-2">
+        <div id="" className=""></div>
+        <div id="" className=""></div>
+        <div id="" className=""></div>
+        <div id="" className=""></div>
+      </article>
+    </section>
   );
 }

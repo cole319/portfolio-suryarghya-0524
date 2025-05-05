@@ -7,8 +7,7 @@ export default function Navbar() {
       <div id="logo" className="flex justify-start items-center gap-[1rem]">
         <div
           id="icons"
-          // className="border-solid rounded-full border-[1px] border-slate-50 w-fit flex flex-col justify-center items-center bg-slate-950"
-          className="p-[0.2rem] border-solid border-[1px] border-slate-50 rounded-full bg-teal-600/50"
+          className="p-[0.2rem] border-solid border-[1px] border-slate-50 rounded-full"
         >
           <Image
             src={"/glowbotTransparent.svg"}

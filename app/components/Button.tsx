@@ -27,7 +27,7 @@ export default function Button({
   return (
     <button
       id="button"
-      className={`border-solid border-[1px] border-slate-50 p-[0.2rem] rounded-full cursor-pointer`}
+      className={`border-solid border-[1px] border-slate-50 p-[0.1rem] rounded-full cursor-pointer`}
     >
       <div
         className={`flex justify-center items-center gap-[1rem] px-[2rem] py-[0.8rem] rounded-full ease-in-out duration-400 ${bgColor} ${hoverBgColor} ${textColor} ${hoverTextColor}`}

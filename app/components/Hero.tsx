@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import {
@@ -8,8 +9,8 @@ import {
 } from "react-icons/ai";
 
 import { FaFileDownload } from "react-icons/fa";
-import { IoMdContact } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
 
 // internal imports
 import Button from "./Button";
@@ -18,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-2 px-[12rem] pt-[6rem] pb-[8rem] items-center"
+      className="grid grid-cols-2 [grid-template-rows:90%_10%] px-[12rem] pt-[4rem] pb-[5rem] items-center rounded-bl-[10%]"
     >
       <article
         id="hero_desc"
@@ -83,6 +84,20 @@ export default function Hero() {
             className="rounded-full"
           />
         </div>
+      </div>
+      <div className="col-span-2 flex justify-center items-center text-slate-50 gap-[3rem] text-[1.7rem] pt-[6rem]">
+        <a href="#" className="hover:-translate-y-1 transition-transform">
+          <AiOutlineGithub />
+        </a>
+        <a href="#" className="hover:-translate-y-1 transition-transform">
+          <AiOutlineTwitter />
+        </a>
+        <a href="#" className="hover:-translate-y-1 transition-transform">
+          <AiOutlineLinkedin />
+        </a>
+        <a href="#" className="hover:-translate-y-1 transition-transform">
+          <FaBluesky />
+        </a>
       </div>
     </section>
   );
