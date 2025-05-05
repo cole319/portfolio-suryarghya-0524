@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { FaInfoCircle } from "react-icons/fa";
 import { FaLightbulb } from "react-icons/fa";
+import { FaGears } from "react-icons/fa6";
 
 //internal imports
 import Navbar from "./components/Navbar";
@@ -21,18 +22,29 @@ export default function Home() {
         <Hero />
       </div>
       <Header
-        icon={<FaInfoCircle />}
+        icon={<FaInfoCircle size={20} />}
         heading="About Me"
         desc="Get to Know more"
       />
-      <div className="bg-[url('/aboutme_bg.jpg')] bg-cover bg-fixed rounded-tr-[10%] rounded-bl-[10%]">
+      <div className="bg-[url('/aboutme_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
         <AboutMe />
       </div>
-      <Header icon={<FaLightbulb />} heading="Skills" desc="Explore my" />
+      <Header
+        icon={<FaLightbulb size={20} />}
+        heading="Skills"
+        desc="Explore my"
+      />
       <div className="bg-[url('/skills_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
         <Skills />
       </div>
-      <Projects />
+      <Header
+        icon={<FaGears size={30} />}
+        heading="Projects"
+        desc="Browse my latest"
+      />
+      <div className="bg-[url('/projects_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
+        <Projects />
+      </div>
       <ContactMe />
       <Footer />
     </div>

@@ -1,12 +1,3 @@
-// import {
-//   AiOutlineGithub,
-//   AiOutlineTwitter,
-//   AiOutlineLinkedin,
-// } from "react-icons/ai";
-
-// import { FaFileDownload } from "react-icons/fa";
-// import { IoMdContact } from "react-icons/io";
-
 interface ButtonProps {
   title: string;
   icon: React.ReactNode;

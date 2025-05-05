@@ -27,7 +27,7 @@ export default function Hero() {
       >
         <div id="header" className="leading-[4rem]">
           <h3 className="text-[2rem] font-semibold text-slate-300">Hi, I'm</h3>
-          <h1 className="text-[6rem] font-bold text-neutral-50">Suryarghya!</h1>
+          <h1 className="text-[6rem] font-bold text-neutral-50">Suryarghya</h1>
         </div>
 
         <h2 className="pt-[2.5rem] text-[2rem] font-medium text-slate-300">
@@ -40,8 +40,6 @@ export default function Hero() {
               2000,
               "Problem Solver",
               2000,
-              "Designer",
-              2000,
             ]}
             speed={50}
             className="font-semibold text-slate-50 font-display-space text-[2.2rem]"
@@ -49,12 +47,12 @@ export default function Hero() {
             repeat={Infinity}
           />
         </h2>
-        <p className="pt-[1rem] text-slate-200 text-[1.2rem] font-medium">
+        <p className="text-slate-200 text-[1.2rem] font-medium">
           In pursuit of perfection in the realm of technology
         </p>
         <div
           id="hero_buttons"
-          className="flex justify-start gap-[1rem] pt-[1.5rem]"
+          className="flex justify-start gap-[1rem] pt-[3rem]"
         >
           <Button
             title="Download CV"

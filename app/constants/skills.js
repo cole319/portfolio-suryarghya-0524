@@ -13,13 +13,14 @@ const skillList = [
         proficiency: 8.5,
       },
       {
-        name: "Solidity",
-        proficiency: 8,
-      },
-      {
         name: "Typescript",
         proficiency: 8,
       },
+      {
+        name: "Solidity",
+        proficiency: 8,
+      },
+
       {
         name: "Python",
         proficiency: 7,
