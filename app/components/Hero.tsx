@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-[url('/bg.jpg')] bg-cover bg-fixed grid grid-cols-2 px-[12rem] pt-[12rem] pb-[8rem] items-center"
+      className="grid grid-cols-2 px-[12rem] pt-[6rem] pb-[8rem] items-center"
     >
       <article
         id="hero_desc"

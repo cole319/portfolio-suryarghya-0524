@@ -11,9 +11,11 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-display-work bg-teal-50 text-teal-950">
-      <Navbar />
-      <Hero />
+    <div className="min-h-screen font-display-work bg-teal-50 text-teal-950 flex flex-col justify-between gap-[2rem]">
+      <div className="bg-[url('/bg.jpg')] bg-cover bg-fixed">
+        <Navbar />
+        <Hero />
+      </div>
       <AboutMe />
       <Skills />
       <Projects />
