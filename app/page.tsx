@@ -24,7 +24,7 @@ export default function Home() {
         <SectionNavButtonUp />
         <SectionNavButtonDown />
       </div>
-      <div className="bg-[url('/hero_bg.jpg')] bg-cover bg-fixed rounded-bl-[10%]">
+      <div className="bg-[url('/hero_bg.jpg')] bg-cover bg-fixed 2xlc:rounded-bl-[10%]">
         <Navbar />
         <Hero />
       </div>

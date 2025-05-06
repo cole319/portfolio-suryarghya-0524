@@ -18,18 +18,25 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-2 [grid-template-rows:90%_10%] px-[12rem] pt-[4rem] pb-[5rem] items-center rounded-bl-[10%]"
+      className="flex flex-col 2xlc:grid 2xlc:grid-cols-2 2xlc:[grid-template-rows:90%_10%] px-[1rem] 2xlc:px-[12rem] pt-[4rem] pb-[5rem] items-center rounded-[0%] 2xlc:rounded-bl-[10%]"
     >
       <article
         id="hero_desc"
-        className="w-full flex flex-col items-start justify-center"
+        className="w-full flex flex-col 2xlc:items-start justify-center items-center"
       >
-        <div id="header" className="leading-[4rem]">
-          <h3 className="text-[2rem] font-semibold text-slate-300">Hi, I'm</h3>
-          <h1 className="text-[6rem] font-bold text-neutral-50">Suryarghya</h1>
+        <div
+          id="header"
+          className="leading-[2.2rem] 2xlc:leading-[4rem] text-center 2xlc:text-start"
+        >
+          <h3 className="text-[1.5rem] 2xlc:text-[2rem] font-semibold text-slate-300">
+            Hi, I'm
+          </h3>
+          <h1 className="text-[3rem] 2xlc:text-[6rem] font-bold text-neutral-50">
+            Suryarghya
+          </h1>
         </div>
 
-        <h2 className="pt-[2.5rem] text-[2rem] font-medium text-slate-300">
+        <h2 className="pt-[2.5rem] text-[1.5rem] 2xlc:text-[2rem] font-medium text-slate-300 ">
           I'm a{" "}
           <TypeAnimation
             sequence={[
@@ -41,17 +48,17 @@ export default function Hero() {
               2000,
             ]}
             speed={50}
-            className="font-semibold text-slate-50 font-display-space text-[2.2rem]"
+            className="font-semibold text-slate-50 font-display-space text-[1.8rem] 2xlc:text-[2.2rem]"
             wrapper="span"
             repeat={Infinity}
           />
         </h2>
-        <p className="text-slate-200 text-[1.2rem] font-medium">
+        <p className="text-slate-200 text-[1rem] 2xlc:text-[1.2rem] font-medium text-center 2xlc:text-start pt-[1.2rem] 2xlc:pt-[0rem]">
           In pursuit of perfection in the realm of technology
         </p>
         <div
           id="hero_buttons"
-          className="flex justify-start gap-[1rem] pt-[3rem]"
+          className="flex flex-col 2xlc:flex-row justify-center 2xlc:justify-start gap-[1rem] pt-[3rem] w-full"
         >
           <Button
             title="Download CV"
@@ -73,14 +80,17 @@ export default function Hero() {
           </a>
         </div>
       </article>
-      <div id="hero_photo" className="flex justify-end items-center">
+      <div
+        id="hero_photo"
+        className="flex justify-end items-center pt-[2rem] 2xlc:pt-[0rem]"
+      >
         <div className="p-[0.6rem] border-solid border-[2px] border-slate-50 rounded-full">
           <Image
             src="/profile-new.jpg"
             width={350}
             height={350}
             alt="profile photo"
-            className="rounded-full"
+            className="rounded-full h-[15rem] w-[15rem] 2xlc:w-full 2xlc:h-full "
           />
         </div>
       </div>

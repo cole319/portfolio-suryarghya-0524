@@ -6,14 +6,14 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
 
 export default function Navbar() {
-  const [linksOpen, setLinksOpen] = useState<boolean>(true);
+  const [linksOpen, setLinksOpen] = useState<boolean>(false);
 
   const handleClick = () => setLinksOpen(!linksOpen);
 
   return (
     <nav
       data-key="next_prev"
-      className="relative 2xlc:px-[12rem] py-[1rem] px-[0.5rem] 2xlc:py-[1.5rem] flex justify-between items-center w-full text-slate-50"
+      className="relative 2xlc:px-[12rem] py-[1.5rem] px-[1rem] 2xlc:py-[1.5rem] flex justify-between items-center w-full text-slate-50"
     >
       <div id="logo" className="flex justify-start items-center gap-[1rem]">
         <div
