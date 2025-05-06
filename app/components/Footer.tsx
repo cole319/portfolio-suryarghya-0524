@@ -8,10 +8,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[12rem]">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+    <footer className="text-center md:text-start bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[1rem] 2xlc:px-[12rem]">
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center 2xlc:items-start">
         <div>
-          <a href="">
+          <a href="#navbar">
             <h2 className="text-2xl font-bold text-white">Suryarghya Saha</h2>
           </a>
           <p className="mt-2 text-sm text-slate-300">
@@ -20,7 +20,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Center */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-2">Quick Links</h3>
           <ul className="space-y-1 text-sm">
@@ -60,7 +59,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Right */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-2">
             Get in Touch
@@ -68,7 +66,7 @@ export default function Footer() {
           <p className="text-sm text-slate-300 mb-3">
             Got a project or idea? Let’s talk.
           </p>
-          <div className="flex space-x-4 text-xl items-center">
+          <div className="flex space-x-4 text-xl justify-center md:justify-start items-center">
             <a
               href="mailto:suryar1332001@gmail.com"
               aria-label="Email"

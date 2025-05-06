@@ -53,9 +53,9 @@ export default function ContactMe() {
     <section
       id="contact_me"
       data-key="next_prev"
-      className="px-[12rem] pb-[6rem] text-slate-50 flex item-center"
+      className="px-[1rem] 2xlc:px-[12rem] pb-[3rem] 2xlc:pb-[6rem] text-slate-50 flex item-center"
     >
-      <div className="w-[60%]">
+      <div className="hidden 2xlc:block w-[60%]">
         <Image
           src="/contact.png"
           width={500}
@@ -64,7 +64,7 @@ export default function ContactMe() {
           className="w-full rounded-tl-md rounded-bl-md"
         />
       </div>
-      <div className="w-[40%] flex justify-end">
+      <div className="w-full 2xlc:w-[40%] flex justify-center 2xlc:justify-end">
         <form
           onSubmit={handleSubmit}
           className="space-y-4 w-full bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50 p-[1.2rem] rounded-tr-md rounded-br-md flex flex-col items-end"
@@ -97,10 +97,9 @@ export default function ContactMe() {
           />
           <button
             type="submit"
-            className="w-fit bg-gradient-to-bl from-teal-950 via-teal-900 to-teal-800 font-medium text-slate-50 px-[2.5rem] py-[0.8rem] rounded-md cursor-pointer hover:from-teal-800 hover:via-teal-800 hover:to-teal-800 flex gap-1 items-center"
+            className="w-full 2xlc:w-fit bg-gradient-to-bl from-teal-950 via-teal-900 to-teal-800 font-medium text-slate-50 px-[2.5rem] py-[0.8rem] rounded-md cursor-pointer hover:from-teal-800 hover:via-teal-800 hover:to-teal-800 gap-1 items-center text-center"
           >
             Send
-            <IoIosSend />
           </button>
           {status && <p className="text-sm">{status}</p>}
         </form>

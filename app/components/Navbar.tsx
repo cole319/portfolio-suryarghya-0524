@@ -13,6 +13,7 @@ export default function Navbar() {
   return (
     <nav
       data-key="next_prev"
+      id="navbar"
       className="relative 2xlc:px-[12rem] py-[1.5rem] px-[1rem] 2xlc:py-[1.5rem] flex justify-between items-center w-full text-slate-50"
     >
       <div id="logo" className="flex justify-start items-center gap-[1rem]">
