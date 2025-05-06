@@ -19,6 +19,12 @@ html {
 
   --font-display-work: var(--font-work-sans);
   --font-display-space: var(--font-space-grotesk);
+
+  /* custom breakpoints */
+
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xlc: 1340px;
+  --breakpoint-3xl: 120rem;
 }
 
 @media (prefers-color-scheme: dark) {

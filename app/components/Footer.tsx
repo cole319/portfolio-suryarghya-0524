@@ -1,3 +1,120 @@
+"use client";
+
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaBluesky, FaSquareXTwitter } from "react-icons/fa6";
+import { BiLogoGmail } from "react-icons/bi";
+
 export default function Footer() {
-  return <div>Footer</div>;
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[12rem]">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div>
+          <a href="">
+            <h2 className="text-2xl font-bold text-white">Suryarghya Saha</h2>
+          </a>
+          <p className="mt-2 text-sm text-slate-300">
+            Full-stack dev. Builder of fast, clean, and intelligent web
+            experiences.
+          </p>
+        </div>
+
+        {/* Center */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-2">Quick Links</h3>
+          <ul className="space-y-1 text-sm">
+            <li>
+              <a
+                href="#about_me"
+                className="text-slate-300 hover:text-slate-50 transition"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="text-slate-300 hover:text-slate-50 transition"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact_me"
+                className="text-slate-300 hover:text-slate-50 transition"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                className="text-slate-300 hover:text-slate-50 transition"
+              >
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Right */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-2">
+            Get in Touch
+          </h3>
+          <p className="text-sm text-slate-300 mb-3">
+            Got a project or idea? Let’s talk.
+          </p>
+          <div className="flex space-x-4 text-xl items-center">
+            <a
+              href="mailto:suryar1332001@gmail.com"
+              aria-label="Email"
+              className="hover:-translate-y-1 transition-transform"
+            >
+              <BiLogoGmail size={23} />
+            </a>
+            <a
+              href="https://github.com/cole319"
+              target="_blank"
+              aria-label="GitHub"
+              className="hover:-translate-y-1 transition-transform"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/suryarghya-saha-286ab4147/"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="hover:-translate-y-1 transition-transform"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://x.com/dem_e_god"
+              target="_blank"
+              aria-label="X"
+              className="hover:-translate-y-1 transition-transform"
+            >
+              <FaSquareXTwitter size={20} />
+            </a>
+            <a
+              href="https://bsky.app/profile/demig0d33.bsky.social"
+              target="_blank"
+              aria-label="Bluesky"
+              className="hover:-translate-y-1 transition-transform"
+            >
+              <FaBluesky size={20} />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-10 text-center text-xs text-slate-400 border-t border-slate-50/20 pt-[1.5rem]">
+        © {currentYear} Suryarghya saha. All rights reserved.
+      </div>
+    </footer>
+  );
 }

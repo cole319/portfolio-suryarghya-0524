@@ -2,15 +2,14 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import {
-  AiOutlineGithub,
-  AiOutlineTwitter,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
 
-import { FaFileDownload } from "react-icons/fa";
-import { FaUserCircle } from "react-icons/fa";
-import { FaBluesky } from "react-icons/fa6";
+import {
+  FaUserCircle,
+  FaLinkedin,
+  FaFileDownload,
+  FaGithub,
+} from "react-icons/fa";
+import { FaBluesky, FaSquareXTwitter } from "react-icons/fa6";
 
 // internal imports
 import Button from "./Button";
@@ -62,14 +61,16 @@ export default function Hero() {
             textColor="text-slate-50"
             hoverTextColor="text-slate-50"
           />
-          <Button
-            title="Contact Me"
-            icon={<FaUserCircle />}
-            bgColor="bg-teal-950/20"
-            hoverBgColor="hover:bg-teal-600"
-            textColor="text-slate-50"
-            hoverTextColor="text-slate-50"
-          />
+          <a href="#contact_me">
+            <Button
+              title="Contact Me"
+              icon={<FaUserCircle />}
+              bgColor="bg-teal-950/20"
+              hoverBgColor="hover:bg-teal-600"
+              textColor="text-slate-50"
+              hoverTextColor="text-slate-50"
+            />
+          </a>
         </div>
       </article>
       <div id="hero_photo" className="flex justify-end items-center">
@@ -84,17 +85,33 @@ export default function Hero() {
         </div>
       </div>
       <div className="col-span-2 flex justify-center items-center text-slate-50 gap-[3rem] text-[1.7rem] pt-[6rem]">
-        <a href="#" className="hover:-translate-y-1 transition-transform">
-          <AiOutlineGithub />
+        <a
+          href="https://github.com/cole319"
+          target="_blank"
+          className="hover:-translate-y-1 transition-transform"
+        >
+          <FaGithub size={23} />
         </a>
-        <a href="#" className="hover:-translate-y-1 transition-transform">
-          <AiOutlineTwitter />
+        <a
+          href="https://x.com/dem_e_god"
+          target="_blank"
+          className="hover:-translate-y-1 transition-transform"
+        >
+          <FaSquareXTwitter size={23} />
         </a>
-        <a href="#" className="hover:-translate-y-1 transition-transform">
-          <AiOutlineLinkedin />
+        <a
+          href="https://www.linkedin.com/in/suryarghya-saha-286ab4147/"
+          target="_blank"
+          className="hover:-translate-y-1 transition-transform"
+        >
+          <FaLinkedin size={23} />
         </a>
-        <a href="#" className="hover:-translate-y-1 transition-transform">
-          <FaBluesky />
+        <a
+          href="https://bsky.app/profile/demig0d33.bsky.social"
+          target="_blank"
+          className="hover:-translate-y-1 transition-transform"
+        >
+          <FaBluesky size={23} />
         </a>
       </div>
     </section>
