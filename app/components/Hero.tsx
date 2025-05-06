@@ -36,7 +36,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        <h2 className="pt-[2.5rem] text-[1.5rem] 2xlc:text-[2rem] font-medium text-slate-300 ">
+        <h2 className="pt-[2.5rem] text-[1.5rem] 2xlc:text-[2rem] font-medium text-slate-300 text-center 2xlc:text-start">
           I'm a{" "}
           <TypeAnimation
             sequence={[

@@ -33,7 +33,7 @@ export default function Home() {
         heading="About Me"
         desc="Get to Know more"
       />
-      <div className="bg-[url('/aboutme_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
+      <div className="bg-[url('/aboutme_bg.jpg')] bg-cover bg-fixed bg-center 2xlc:rounded-tr-[10%] 2xlc:rounded-bl-[10%]">
         <AboutMe />
       </div>
       <Header
@@ -41,7 +41,7 @@ export default function Home() {
         heading="Skills"
         desc="Explore my"
       />
-      <div className="bg-[url('/skills_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%] rounded-bl-[10%]">
+      <div className="bg-[url('/skills_bg.jpg')] bg-cover bg-fixed bg-center 2xlc:rounded-tr-[10%] 2xlc:rounded-bl-[10%]">
         <Skills />
       </div>
       <Header
@@ -49,7 +49,7 @@ export default function Home() {
         heading="Projects"
         desc="Browse my latest"
       />
-      <div className="bg-[url('/projects_bg.jpg')] bg-cover bg-fixed bg-center rounded-tr-[10%]">
+      <div className="bg-[url('/projects_bg.jpg')] bg-cover bg-fixed bg-center 2xlc:rounded-tr-[10%]">
         <Projects />
       </div>
       <Header

@@ -9,11 +9,12 @@ export default function Skills() {
     <section
       id="skills"
       data-key="next_prev"
-      className="px-[12rem] py-[6rem] bg-gradient-to-r from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-bl-[10%] flex justify-between item-center"
+      // className="px-[12rem] py-[6rem] bg-gradient-to-r from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-bl-[10%] flex justify-between item-center"
+      className="px-[1rem] 2xlc:px-[12rem] py-[3rem] 2xlc:py-[10rem] bg-gradient-to-r from-teal-800/70 via-teal-800/20 to-transparent text-slate-50 2xlc:rounded-bl-[10%] flex flex-col gap-[2.5rem] 2xlc:gap-0 2xlc:flex-row justify-between item-center"
     >
       <div
         id="skills_container"
-        className="grid grid-cols-2 grid-rows-2 w-full gap-[2rem]"
+        className="grid 2xlc:grid-cols-2 2xlc:grid-rows-2 w-full gap-[2rem]"
       >
         {skillList.map((skill, idx) => {
           return (
