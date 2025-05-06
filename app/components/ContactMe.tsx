@@ -53,9 +53,9 @@ export default function ContactMe() {
     <section
       id="contact_me"
       data-key="next_prev"
-      className="px-[1rem] 2xlc:px-[12rem] pb-[3rem] 2xlc:pb-[6rem] text-slate-50 flex item-center"
+      className="px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 2lgc:px-[2rem] 2xlc:px-[12rem] pb-[3rem] 2xlc:pb-[6rem] text-slate-50 flex item-center"
     >
-      <div className="hidden 2xlc:block w-[60%]">
+      <div className="hidden 2lgc:block w-[60%]">
         <Image
           src="/contact.png"
           width={500}
@@ -64,7 +64,7 @@ export default function ContactMe() {
           className="w-full rounded-tl-md rounded-bl-md"
         />
       </div>
-      <div className="w-full 2xlc:w-[40%] flex justify-center 2xlc:justify-end">
+      <div className="w-full 2lgc:w-[40%] flex justify-center 2xlc:justify-end">
         <form
           onSubmit={handleSubmit}
           className="space-y-4 w-full bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50 p-[1.2rem] rounded-tr-md rounded-br-md flex flex-col items-end"
@@ -93,11 +93,11 @@ export default function ContactMe() {
             required
             onChange={handleChange}
             value={form.message}
-            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] rounded-sm text-slate-500"
+            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] 2lgc:h-[5rem] 2xlc:h-[10rem] rounded-sm text-slate-500"
           />
           <button
             type="submit"
-            className="w-full 2xlc:w-fit bg-gradient-to-bl from-teal-950 via-teal-900 to-teal-800 font-medium text-slate-50 px-[2.5rem] py-[0.8rem] rounded-md cursor-pointer hover:from-teal-800 hover:via-teal-800 hover:to-teal-800 gap-1 items-center text-center"
+            className="w-full xlc:w-fit bg-gradient-to-bl from-teal-950 via-teal-900 to-teal-800 font-medium text-slate-50 px-[2.5rem] py-[0.8rem] 2lgc:py-[0.5rem] 2xlc:py-[0.8rem] rounded-md cursor-pointer hover:from-teal-800 hover:via-teal-800 hover:to-teal-800 gap-1 items-center text-center"
           >
             Send
           </button>

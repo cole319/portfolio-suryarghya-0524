@@ -5,7 +5,7 @@ export default function AboutMe() {
     <section
       id="about_me"
       data-key="next_prev"
-      className="px-[1rem] 2xlc:px-[12rem] py-[3rem] 2xlc:py-[10rem] bg-gradient-to-l from-teal-800 via-teal-800/20 to-transparent text-slate-50 2xlc:rounded-tr-[10%] flex flex-col gap-[2.5rem] 2xlc:gap-0 2xlc:flex-row justify-between item-center"
+      className="lgc:px-[4rem] lgc:py-[2rem] px-[1rem] 2lgc:px-[10rem] 2xlc:px-[12rem] py-[3rem] xlc:px-[8rem] xlc:py-[4rem] 2xlc:py-[10rem] bg-gradient-to-l from-teal-800 via-teal-800/20 to-transparent text-slate-50 2xlc:rounded-tr-[10%] flex flex-col gap-[2.5rem] 2xlc:gap-0 2xlc:flex-row justify-between item-center"
     >
       <div
         id="education"
@@ -40,7 +40,7 @@ export default function AboutMe() {
           <p className="text-slate-600 pb-1">2020 - 2024</p>
         </div>
       </div>
-      <div className="w-full 2xlc:w-1/2 text-[1.2rem]">
+      <div className="w-full 2xlc:w-1/2 text-[1rem] 2xlc:text-[1.2rem]">
         <p>Hello there!</p>
         <p>
           {" "}

@@ -11,9 +11,9 @@ export default function Projects() {
       id="projects"
       data-key="next_prev"
       // className="px-[12rem] py-[6rem] bg-gradient-to-l from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-tr-[10%] flex flex-col justify-center item-center"
-      className="px-[1rem] 2xlc:px-[12rem] py-[5rem] 2xlc:py-[10rem] bg-gradient-to-r from-teal-800/70 via-teal-800/20 to-transparent text-slate-50 2xlc:rounded-tr-[10%] flex flex-col gap-[2.5rem] 2xlc:gap-0 2xlc:flex-row justify-between item-center"
+      className="px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 2lgc:px-[3rem] 2xlc:px-[12rem] py-[5rem] 2xlc:py-[10rem] bg-gradient-to-r from-teal-800/70 via-teal-800/20 to-transparent text-slate-50 2xlc:rounded-tr-[10%] flex flex-col gap-[2.5rem] 2xlc:gap-0 2xlc:flex-row justify-between item-center"
     >
-      <div className="grid 2xlc:grid-cols-3 gap-[2rem]">
+      <div className="grid 2lgc:grid-cols-2 2xlc:grid-cols-3 gap-[2rem]">
         {projects.map((project, idx) => {
           return (
             <div

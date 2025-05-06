@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col 2xlc:grid 2xlc:grid-cols-2 2xlc:[grid-template-rows:90%_10%] px-[1rem] 2xlc:px-[12rem] pt-[4rem] pb-[5rem] items-center rounded-[0%] 2xlc:rounded-bl-[10%]"
+      className="flex flex-col lgc:px-[4rem] xlc:px-[8rem] 2xlc:grid 2xlc:grid-cols-2 2xlc:[grid-template-rows:90%_10%] px-[1rem] 2xlc:px-[12rem] pt-[4rem] pb-[5rem] items-center rounded-[0%] 2xlc:rounded-bl-[10%]"
     >
       <article
         id="hero_desc"
@@ -26,12 +26,12 @@ export default function Hero() {
       >
         <div
           id="header"
-          className="leading-[2.2rem] 2xlc:leading-[4rem] text-center 2xlc:text-start"
+          className="leading-[2.2rem] 2lgc:leading-[3rem] 2xlc:leading-[4rem] text-center 2xlc:text-start"
         >
           <h3 className="text-[1.5rem] 2xlc:text-[2rem] font-semibold text-slate-300">
             Hi, I'm
           </h3>
-          <h1 className="text-[3rem] 2xlc:text-[6rem] font-bold text-neutral-50">
+          <h1 className="text-[3rem] 2lgc:text-[4rem] 2xlc:text-[6rem] font-bold text-neutral-50">
             Suryarghya
           </h1>
         </div>
@@ -58,7 +58,7 @@ export default function Hero() {
         </p>
         <div
           id="hero_buttons"
-          className="flex flex-col 2xlc:flex-row justify-center 2xlc:justify-start gap-[1rem] pt-[3rem] w-full"
+          className="flex flex-col lgc:flex-row justify-center 2xlc:justify-start gap-[1rem] pt-[3rem] w-full"
         >
           <Button
             title="Download CV"

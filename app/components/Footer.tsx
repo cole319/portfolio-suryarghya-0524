@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-center md:text-start bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[1rem] 2xlc:px-[12rem]">
+    <footer className="text-center md:text-start bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 2xlc:px-[12rem]">
       <div className="flex flex-col md:grid md:grid-cols-3 gap-8 items-center 2xlc:items-start">
         <div>
           <a href="#navbar">
@@ -72,7 +72,7 @@ export default function Footer() {
               aria-label="Email"
               className="hover:-translate-y-1 transition-transform"
             >
-              <BiLogoGmail size={23} />
+              <BiLogoGmail size={20} />
             </a>
             <a
               href="https://github.com/cole319"
@@ -80,7 +80,7 @@ export default function Footer() {
               aria-label="GitHub"
               className="hover:-translate-y-1 transition-transform"
             >
-              <FaGithub size={20} />
+              <FaGithub size={17} />
             </a>
             <a
               href="https://www.linkedin.com/in/suryarghya-saha-286ab4147/"
@@ -88,7 +88,7 @@ export default function Footer() {
               aria-label="LinkedIn"
               className="hover:-translate-y-1 transition-transform"
             >
-              <FaLinkedin size={20} />
+              <FaLinkedin size={17} />
             </a>
             <a
               href="https://x.com/dem_e_god"
@@ -96,7 +96,7 @@ export default function Footer() {
               aria-label="X"
               className="hover:-translate-y-1 transition-transform"
             >
-              <FaSquareXTwitter size={20} />
+              <FaSquareXTwitter size={17} />
             </a>
             <a
               href="https://bsky.app/profile/demig0d33.bsky.social"
@@ -104,7 +104,7 @@ export default function Footer() {
               aria-label="Bluesky"
               className="hover:-translate-y-1 transition-transform"
             >
-              <FaBluesky size={20} />
+              <FaBluesky size={17} />
             </a>
           </div>
         </div>
