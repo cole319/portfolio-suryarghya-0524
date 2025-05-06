@@ -1,6 +1,6 @@
 export default function ContactMe() {
   return (
-    <div>
+    <section>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam
       nemo voluptatum velit dolor numquam voluptas sunt, excepturi corrupti
       doloremque neque, sed illo fuga ut quas. Temporibus corporis ducimus fuga?
@@ -17,6 +17,6 @@ export default function ContactMe() {
       elit. Cumque laboriosam nemo voluptatum velit dolor numquam voluptas sunt,
       excepturi corrupti doloremque neque, sed illo fuga ut quas. Temporibus
       corporis ducimus fuga?
-    </div>
+    </section>
   );
 }

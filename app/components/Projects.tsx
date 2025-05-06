@@ -9,6 +9,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
+      data-key="next_prev"
       className="px-[12rem] py-[6rem] bg-gradient-to-l from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-tr-[10%] flex flex-col justify-center item-center"
     >
       <div className="grid grid-cols-3 gap-[2rem]">

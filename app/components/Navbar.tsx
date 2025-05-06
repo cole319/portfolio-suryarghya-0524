@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="px-[12rem] py-[1.5rem] flex justify-between items-center w-full text-slate-50 ">
+    <nav
+      data-key="next_prev"
+      className="px-[12rem] py-[1.5rem] flex justify-between items-center w-full text-slate-50 "
+    >
       <div id="logo" className="flex justify-start items-center gap-[1rem]">
         <div
           id="icons"

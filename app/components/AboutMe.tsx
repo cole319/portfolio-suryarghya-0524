@@ -4,6 +4,7 @@ export default function AboutMe() {
   return (
     <section
       id="about_me"
+      data-key="next_prev"
       className="px-[12rem] py-[10rem] bg-gradient-to-l from-teal-800 via-teal-800/20 to-transparent text-slate-50 rounded-tr-[10%] flex justify-between item-center"
     >
       <div

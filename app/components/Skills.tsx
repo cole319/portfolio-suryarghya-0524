@@ -8,6 +8,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
+      data-key="next_prev"
       className="px-[12rem] py-[6rem] bg-gradient-to-r from-teal-800 via-teal-800/50 to-transparent text-slate-50 rounded-bl-[10%] flex justify-between item-center"
     >
       <div
