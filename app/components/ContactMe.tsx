@@ -2,7 +2,6 @@
 
 import { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
-import { IoIosSend } from "react-icons/io";
 
 interface FormData {
   name: string;

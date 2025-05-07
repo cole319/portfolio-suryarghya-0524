@@ -3,7 +3,6 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 // internal imports
-
 import { navigateToNext, navigateToPrev } from "../utils/navigateToNextOrPrev";
 
 export function SectionNavButtonUp() {
