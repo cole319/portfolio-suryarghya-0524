@@ -27,13 +27,6 @@ const projectsList = [
     image: "/eth.png",
     github: "https://github.com/cole319/ICO-1.1.0",
   },
-  {
-    name: "ICO",
-    description:
-      "A custom ERC-20 Token named BridgeCoin (BGC) and a Crowdsale DApp for Initial Coin Offering (BGC Presale)",
-    image: "/eth.png",
-    github: "https://github.com/cole319/ICO-1.1.0",
-  },
 ];
 
 export default projectsList;
