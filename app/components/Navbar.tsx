@@ -26,7 +26,7 @@ export default function Navbar() {
             height={50}
             width={50}
             alt="glowbot icon"
-            className="rounded-full bg-teal-950 h-[2rem] w-[2rem] 2xlc:h-[3rem] 2xlc:w-[3rem]"
+            className="rounded-full bg-gradient-to-tr from-slate-800 via-slate-900 to-slate-950 h-[2rem] w-[2rem] 2xlc:h-[3rem] 2xlc:w-[3rem]"
           />
         </div>
         <h1
