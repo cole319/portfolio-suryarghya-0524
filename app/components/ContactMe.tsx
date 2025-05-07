@@ -93,7 +93,7 @@ export default function ContactMe() {
             required
             onChange={handleChange}
             value={form.message}
-            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] 2lgc:h-[5rem] 2xlc:h-[8rem] rounded-sm text-slate-500"
+            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] 2lgc:h-[5rem] 2xlc:h-[6rem] 3xlc:h-[8rem] rounded-sm text-slate-500"
           />
           <button
             type="submit"
