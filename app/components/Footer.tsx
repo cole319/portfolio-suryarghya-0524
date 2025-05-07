@@ -49,7 +49,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/196J0v9nhwJb92DVfN8-V2NrJhaF-Nl2F/view?usp=sharing"
                 target="_blank"
                 className="text-slate-300 hover:text-slate-50 transition"
               >

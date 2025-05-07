@@ -60,14 +60,20 @@ export default function Hero() {
           id="hero_buttons"
           className="flex flex-col lgc:flex-row justify-center 3lgc:justify-start gap-[1rem] pt-[3rem] w-full"
         >
-          <Button
-            title="Download CV"
-            icon={<FaFileDownload />}
-            bgColor="bg-teal-600"
-            hoverBgColor="hover:bg-teal-950/20"
-            textColor="text-slate-50"
-            hoverTextColor="text-slate-50"
-          />
+          <a
+            href="https://drive.google.com/file/d/196J0v9nhwJb92DVfN8-V2NrJhaF-Nl2F/view?usp=sharing"
+            target="_blank"
+          >
+            <Button
+              title="Download CV"
+              icon={<FaFileDownload />}
+              bgColor="bg-teal-600"
+              hoverBgColor="hover:bg-teal-950/20"
+              textColor="text-slate-50"
+              hoverTextColor="text-slate-50"
+            />
+          </a>
+
           <a href="#contact_me">
             <Button
               title="Contact Me"
