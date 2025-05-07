@@ -36,9 +36,15 @@ export default function Skills() {
                   return (
                     <div key={id}>
                       <div className="py-2 flex flex-col justify-center items-start gap-[0.5rem]">
-                        <h1 className="font-semibold md:w-2/6 text-slate-50 hover:text-slate-200">
-                          {content.name}
-                        </h1>
+                        <div className="flex justify-start items-center gap-[0.6rem]">
+                          <div className="bg-teal-950 border-[1px] border-solid border-slate-50 rounded-full p-[0.3rem]">
+                            {" "}
+                            {content.icon}
+                          </div>
+                          <h1 className="font-semibold md:w-2/6 text-slate-50 hover:text-slate-200">
+                            {content.name}
+                          </h1>
+                        </div>
 
                         <div className="bg-transparent mb-1 border-[1px] border-slate-400 rounded-sm w-full lg:w-3/4 h-2">
                           <div
