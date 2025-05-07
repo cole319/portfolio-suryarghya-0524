@@ -63,7 +63,7 @@ export default function ContactMe() {
           className="w-full rounded-tl-md rounded-bl-md"
         />
       </div>
-      <div className="w-full 2lgc:w-[40%] flex justify-center items-center 2xlc:justify-end bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50">
+      <div className="w-full 2lgc:w-[40%] flex justify-center items-center 2xlc:justify-end bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50 rounded-md 2lgc:rounded-tl-none 2lgc:rounded-bl-none">
         <form
           onSubmit={handleSubmit}
           className="space-y-4 w-full  p-[1.2rem] rounded-tr-md rounded-br-md flex flex-col items-end"
