@@ -101,7 +101,7 @@ export default function ContactMe() {
           >
             Send
           </button>
-          {status && <p className="text-sm">{status}</p>}
+          {status && <p className="text-sm text-blue-600">{status}</p>}
         </form>
       </div>
     </section>
