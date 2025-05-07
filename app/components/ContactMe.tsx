@@ -53,7 +53,7 @@ export default function ContactMe() {
     <section
       id="contact_me"
       data-key="next_prev"
-      className="px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 2lgc:px-[2rem] 2xlc:px-[12rem] pb-[3rem] 2xlc:pb-[6rem] text-slate-50 flex item-center"
+      className="px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 3lgc:px-[6rem] 2lgc:px-[3rem] 2xlc:px-[12rem] pb-[3rem] 2xlc:pb-[6rem] text-slate-50 flex item-center"
     >
       <div className="hidden 2lgc:block w-[60%]">
         <Image
@@ -64,10 +64,10 @@ export default function ContactMe() {
           className="w-full rounded-tl-md rounded-bl-md"
         />
       </div>
-      <div className="w-full 2lgc:w-[40%] flex justify-center 2xlc:justify-end">
+      <div className="w-full 2lgc:w-[40%] flex justify-center items-center 2xlc:justify-end bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50">
         <form
           onSubmit={handleSubmit}
-          className="space-y-4 w-full bg-gradient-to-br from-slate-50 via-slate-50/70 to-slate-50/50 p-[1.2rem] rounded-tr-md rounded-br-md flex flex-col items-end"
+          className="space-y-4 w-full  p-[1.2rem] rounded-tr-md rounded-br-md flex flex-col items-end"
         >
           <input
             type="text"
@@ -93,7 +93,7 @@ export default function ContactMe() {
             required
             onChange={handleChange}
             value={form.message}
-            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] 2lgc:h-[5rem] 2xlc:h-[10rem] rounded-sm text-slate-500"
+            className="w-full border-solid border-[2px] border-slate-400 p-2 h-[10rem] 2lgc:h-[5rem] 2xlc:h-[8rem] rounded-sm text-slate-500"
           />
           <button
             type="submit"

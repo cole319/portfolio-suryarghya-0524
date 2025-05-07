@@ -21,7 +21,7 @@ export default function Button({
       className={`border-solid border-[1px] border-slate-50 p-[0.1rem] rounded-full cursor-pointer w-full lgc:w-fit`}
     >
       <div
-        className={`flex justify-center items-center gap-[0.5rem] 2xlc:gap-[1rem] px-[2rem] py-[0.8rem] rounded-full ease-in-out duration-400 ${bgColor} ${hoverBgColor} ${textColor} ${hoverTextColor}`}
+        className={`flex justify-center items-center gap-[0.5rem] 2xlc:gap-[1rem] px-[2rem] 3lgc:px-[1rem] 2xlc:px-[2rem] py-[0.8rem] 3lgc:py-[0.5rem] 2xlc:py-[0.8rem] rounded-full ease-in-out duration-400 ${bgColor} ${hoverBgColor} ${textColor} ${hoverTextColor}`}
       >
         <span>{icon}</span>
         <p className="font-semibold">{title}</p>

@@ -20,7 +20,7 @@ import {
 export default function Home() {
   return (
     <main className="relative w-full min-h-screen font-display-work bg-gradient-to-br from-teal-800 via-slate-50 to-teal-700 bg-fixed text-teal-950 flex flex-col justify-between gap-[2rem] overflow-hidden">
-      <div className="fixed top-[85vh] 2xlc:top-[50vh] right-[5%] transform -translate-y-[50%] z-50 flex flex-col gap-[1rem]">
+      <div className="fixed top-[85vh] 3lgc:top-[50vh] right-[2%] 2xlc:right-[5%] transform -translate-y-[50%] z-50 flex flex-col gap-[1rem]">
         <SectionNavButtonUp />
         <SectionNavButtonDown />
       </div>

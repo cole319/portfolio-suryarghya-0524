@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav
       data-key="next_prev"
       id="navbar"
-      className="relative py-[1.5rem] px-[1rem] lgc:px-[4rem] lgc:py-[2rem] xlc:px-[8rem] 2lgc:px-[2rem] 2xlc:px-[12rem] 2xlc:py-[1.5rem] flex justify-between items-center w-full text-slate-50"
+      className="relative py-[1.5rem] px-[1rem] lgc:px-[4rem] lgc:py-[2rem] xlc:px-[8rem] 2lgc:px-[2rem] 3lgc:px-[6rem] 2xlc:px-[12rem] 2xlc:py-[1.5rem] flex justify-between items-center w-full text-slate-50"
     >
       <div id="logo" className="flex justify-start items-center gap-[1rem]">
         <div

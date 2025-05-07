@@ -26,7 +26,8 @@ html {
   --breakpoint-xlc: 700px;
   --breakpoint-2lgc: 850px;
   --breakpoint-3lgc: 1000px;
-  --breakpoint-2xlc: 1340px;
+  --breakpoint-2xlc: 1220px;
+  --breakpoint-3xlc: 1300px;
 }
 
 @media (prefers-color-scheme: dark) {
