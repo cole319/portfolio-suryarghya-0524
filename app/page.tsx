@@ -16,6 +16,8 @@ import {
   SectionNavButtonUp,
   SectionNavButtonDown,
 } from "./components/SectionNavButton";
+import Chatbot from "./components/Chatbot";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
         <SectionNavButtonUp />
         <SectionNavButtonDown />
       </div>
+      <ChatbotWidget />
       <div className="bg-[url('/hero_bg.jpg')] bg-cover bg-fixed 2xlc:rounded-bl-[10%]">
         <Navbar />
         <Hero />
