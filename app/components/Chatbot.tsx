@@ -1,12 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { RiSendPlane2Fill } from "react-icons/ri";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
     { role: "system", content: "You are a helpful assistant." },
   ]);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -62,20 +68,22 @@ export default function Chatbot() {
           .map((m, i) => (
             <div
               key={i}
-              className={`p-[1rem] rounded w-[85%] ${
+              className={`p-[1rem] rounded-2xl w-[85%] shadow-md ${
                 m.role === "user"
-                  ? "bg-sky-600 text-neutral-50 self-end"
-                  : "bg-gray-100 self-start"
+                  ? "bg-sky-600 text-neutral-50 self-end rounded-br-none"
+                  : "bg-gray-200 self-start rounded-bl-none"
               }`}
             >
               <strong>{m.role === "user" ? "You" : "Bot"}:</strong> {m.content}
             </div>
           ))}
+        <div ref={messagesEndRef} />
         {loading && <div className="text-gray-500">Typing...</div>}
       </div>
       <div className="flex gap-2">
         <input
-          className="flex-1 border border-slate-600 rounded px-2 py-1 text-sm"
+          className="flex-1 border border-slate-600 rounded-xl px-2 py-1 text-sm"
+          placeholder="Write here..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
