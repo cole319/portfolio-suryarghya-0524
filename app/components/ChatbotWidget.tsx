@@ -2,7 +2,6 @@
 "use client";
 
 import { useState } from "react";
-import { FaMessage } from "react-icons/fa6";
 import { BsChatRightTextFill } from "react-icons/bs";
 import { IoMdCloseCircle } from "react-icons/io";
 import Chatbot from "./Chatbot";
@@ -13,9 +12,9 @@ export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
+    <div className="fixed bottom-[1rem] lgc:bottom-4 lgc:right-4 z-50 flex flex-col items-end gap-2">
       {isOpen && (
-        <div className="w-[350px] h-[500px] bg-neutral-50/95 shadow-xl rounded-lg overflow-hidden relative animate-fade-in">
+        <div className="w-[100vw] h-[500px] lgc:w-[350px] lgc:h-[500px] bg-neutral-50/95 shadow-xl lgc:rounded-lg flex flex-col items-center overflow-hidden relative animate-fade-in">
           <button
             className="absolute top-2 right-2 p-1 rounded hover:bg-gray-100"
             onClick={() => setIsOpen(false)}
@@ -48,7 +47,7 @@ export default function ChatbotWidget() {
       {!isOpen && (
         <button
           //   className="bg-gradient-to-t from-slate-50/40 text-neutral-50 rounded-full shadow-xl"
-          className="cursor-pointer 2lgc:hidden text-blue-600 bg-neutral-50/80 p-2 rounded-full text-[2rem]"
+          className="fixed right-4 bottom-4 cursor-pointer 2lgc:hidden text-blue-600 bg-neutral-50/80 p-2 rounded-full text-[2rem]"
           onClick={() => setIsOpen(true)}
           aria-label="Open chatbot"
         >

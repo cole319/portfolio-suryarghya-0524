@@ -21,7 +21,8 @@ html {
   --font-display-space: var(--font-space-grotesk);
 
   /* custom breakpoints */
-  --breakpoint-smc: 375px;
+  --breakpoint-smc: 400px;
+  --breakpoint-mdc: 500px;
   --breakpoint-lgc: 600px;
   --breakpoint-xlc: 700px;
   --breakpoint-2lgc: 850px;

@@ -61,7 +61,7 @@ export default function Chatbot() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-[350px] bg-transparent rounded-xl p-[1rem] z-50">
+    <div className="fixed bottom-4 w-full smc:w-[80%] mdc:w-[65%] lgc:w-[350px] rounded-xl p-[1rem] z-50">
       <div className="h-[400px] overflow-y-auto text-sm space-y-2 mb-2 flex flex-col">
         {messages
           .filter((m) => m.role !== "system")
