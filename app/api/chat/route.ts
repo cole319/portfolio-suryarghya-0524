@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
       Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
       "Content-Type": "application/json",
       "HTTP-Referer": "https://suryarghya-portfolio.vercel.app/",
-      "X-Title": "Adele",
+      "X-Title": "Marie",
     },
     body: JSON.stringify({
       model: "mistralai/mistral-7b-instruct",
