@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { BsChatRightTextFill } from "react-icons/bs";
 import { IoMdCloseCircle } from "react-icons/io";
 
@@ -10,6 +10,9 @@ import animationData from "@/public/greyrobot.json";
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
+  const [delayedWelcomeMessage, setDelayedWelcomeMessage] = useState<
+    string | undefined
+  >(undefined);
   const chatbotRef = useRef<{ resetChat: () => void }>(null);
 
   const handleReset = () => {
@@ -21,6 +24,20 @@ export default function ChatbotWidget() {
   const handleOpen = () => {
     setIsOpen(true);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        setDelayedWelcomeMessage(
+          "Hi,👋 I'm Marie Chatoinette, your friendly chatbot. Ask me anything about the site, your projects, or just say hi!"
+        );
+      }, 1200);
+
+      return () => clearTimeout(timer);
+    } else {
+      setDelayedWelcomeMessage(undefined); // Reset when closed
+    }
+  }, [isOpen]);
 
   return (
     <div className="fixed bottom-[1rem] lgc:bottom-4 lgc:right-4 z-50 flex flex-col items-end gap-2">
@@ -53,7 +70,7 @@ export default function ChatbotWidget() {
       {!isOpen && (
         <button
           className="cursor-pointer hidden 2lgc:block"
-          onClick={() => setIsOpen(true)}
+          onClick={() => handleOpen()}
           aria-label="Open chatbot"
         >
           <Lottie

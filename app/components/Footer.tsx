@@ -1,11 +1,16 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaBluesky, FaSquareXTwitter } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="text-center md:text-start bg-gradient-to-tr from-teal-950 via-teal-900 to-teal-950 text-slate-50 py-10 px-[1rem] lgc:px-[4rem] xlc:px-[8rem] 2xlc:px-[12rem]">
@@ -111,7 +116,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 text-center text-xs text-slate-400 border-t border-slate-50/20 pt-[1.5rem]">
-        © {currentYear} Suryarghya saha. All rights reserved.
+        © {currentYear ?? "20XX"} Suryarghya Saha. All rights reserved.
       </div>
     </footer>
   );

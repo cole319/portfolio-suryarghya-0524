@@ -32,7 +32,7 @@ const Chatbot = forwardRef(function Chatbot(
   });
 
   useEffect(() => {
-    if (!hasWelcomedRef.current && welcomeMessage) {
+    if (welcomeMessage && !hasWelcomedRef.current) {
       const alreadyExists = messages.some(
         (m) => m.role === "assistant" && m.content === welcomeMessage
       );
@@ -44,7 +44,8 @@ const Chatbot = forwardRef(function Chatbot(
             { role: "assistant", content: welcomeMessage },
           ]);
           hasWelcomedRef.current = true;
-        }, 1000);
+        }, 500);
+
         return () => clearTimeout(timer);
       } else {
         hasWelcomedRef.current = true;
