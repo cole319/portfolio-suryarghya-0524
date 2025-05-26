@@ -61,7 +61,7 @@ export default function Hero() {
           className="flex flex-col lgc:flex-row justify-center 3lgc:justify-start gap-[1rem] pt-[3rem] w-full"
         >
           <a
-            href="https://drive.google.com/file/d/1tPug6MCiQth8bFMIP7uu8YlijSVXS0qh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1_7WrorlWQzOCm6_EzoHn6tq2WqptFT4H/view?usp=sharing"
             target="_blank"
           >
             <Button
