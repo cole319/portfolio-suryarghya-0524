@@ -9,11 +9,11 @@ export async function POST(req: NextRequest) {
     headers: {
       Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
       "Content-Type": "application/json",
-      "HTTP-Referer": "http://localhost:3000", // replace with your actual site
+      "HTTP-Referer": "http://localhost:3000",
       "X-Title": "Adele",
     },
     body: JSON.stringify({
-      model: "mistralai/mistral-7b-instruct", // Or other models like 'meta-llama/llama-3-8b-instruct'
+      model: "mistralai/mistral-7b-instruct",
       messages: body.messages,
       temperature: 0.7,
     }),
